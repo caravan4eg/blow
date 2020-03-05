@@ -1,0 +1,136 @@
+.wrapper{
+    height: 100vh;
+    width: 93.75%;
+    background: url('assets/images/bg1.png');
+    margin-left: 6.25%;
+    background-size: cover;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    /* background-color: red; */
+
+}
+.navbar{
+    width: 500px;
+    margin: 30px 30px 0 0;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li a{
+    display: flex; /*чтобы ссылка была блочным, а не срочным элементом при наведении*/
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none; /*чтобы ссылка без подчеркивания*/
+    /* display: block; */
+    /* line-height: 41px; */
+    /* text-align: center; */
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+    font-family: "Montserrat";
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100px;
+    height: 41px;
+    border-radius: 20px;
+    border-width: 0;
+}
+
+.navbar ul li a:hover{
+    color: #f0cdac;
+    background-color: #000000;
+}
+
+.logo{
+    font-size: 40px;
+    line-height: 30px;
+    color: #000000;
+    font-family: "Montserrat";
+    font-weight: 900;
+    margin: 30px 0 0 30px;
+}
+
+.explore-work button{
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #f0cdac;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+    height: 62px;
+    border-radius: 30px;
+    border-width: 0;
+    background-color: #000000;
+    filter: drop-shadow(0px 50px 30px rgba(0,0,0,0.6));
+    margin: 669px 0 0 720px;
+    width: fit-content;
+    padding: 0 25px 0 25px;
+}
+
+.explore-work button:hover{
+    border-width: 2px;
+}
+
+.sidebar{
+    width: 6.25%;
+    position:fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.sidebar .aside-text{
+    transform: rotate(-90deg);
+    width: 500px;
+    margin-left: -210px;
+    margin-top: 300px;
+
+    font-size: 28px;
+    line-height: 30px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #333;
+}
+
+.main{
+    height: 100vh;
+    margin-top: 34px;
+    display: flex;
+}
+
+.main-column{
+    border: 5px solid red;
+    flex-grow: 1;
+}
+
+.footer{
+    height: 20vh;
+}
+
+/* ----------------- For small screens ---------------------- */
+
+@media (max-width: 800px) {
+    .sidebar{
+        display: none;
+    }
+    .wrapper{
+        margin: 0;
+        width: 100vw;
+    }
+}
